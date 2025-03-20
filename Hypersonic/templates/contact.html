@@ -10,18 +10,10 @@
     <div class="container mt-5">
         <h2 class="text-center">Contact Us</h2>
         
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-                        {{ message }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-        
-        <form method="POST">
+        <form action="https://formsubmit.co/jeetverma0721@gmail.com.com" method="POST" class="mt-4">
+            <!-- Prevent spam submissions -->
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -42,7 +34,7 @@
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
         </form>
     </div>
 
