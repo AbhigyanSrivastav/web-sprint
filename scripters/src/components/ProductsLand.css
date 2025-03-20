@@ -1,0 +1,73 @@
+.product-land {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  height: 80vh;
+}
+
+.image-detail {
+  font-size: 2rem;
+    font-weight: 700;
+    animation: slideInRight 2s;
+    animation-fill-mode: forwards;
+    color: rgb(255, 102, 14);
+  
+}
+
+.image-detail button{
+    background-color: #7fbcf8;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+.image-detail button:hover{
+    background-color: #31df25;
+    color: #ffffff;
+    box-shadow: 0 0 10px #000000;
+    transition: all 0.3s ease;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.imageLeft{
+    animation: slideInLeft 2s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 20px #e5ff00;
+    border-radius: 50px;
+    background: radial-gradient(circle at center, rgba(127, 188, 248, 0.3), transparent);
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
