@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+body {
+  background: #d8d8d8;
+}
+nav {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+nav .head {
+  color: #c72324;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+nav .links {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .links a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .links a:hover {
+  color: #c72324;
+}
+
+nav .last-div {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.hero-text-img {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px 10px;
+  display: flex;
+  height: 250px;
+  margin-top: 20px;
+  gap: 20px;
+}
+.hero-text-img div {
+  flex: 1;
+}
+
+.hero-text-img .text-box {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hero-text-img .images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero-text-img .images .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100) brightness(0.9);
+}
+
+.hero-text-img .images .add {
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 40px;
+}
+
+.hero-head {
+  max-width: 1350px;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-head img {
+  width: 100px;
+}
+.hero-head .head {
+  font-size: 72px;
+  font-weight: bolder;
+  text-align: right;
+  line-height: 75px;
+}
+.hero-head .head .diff-color {
+  color: #c72324;
+}
+
+.story {
+  width: 1050px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  text-align: center;
+  font-weight: bolder;
+  margin: auto;
+}
+.diff-color {
+  color: #c72324;
+}
+
+.qoute {
+  width: 1350px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+}
+
+.qoute .childs {
+  flex: 1;
+}
+
+.qoute-texts {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 500px;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: right;
+}
+
+.qoute-texts .child-1 {
+  width: 10%;
+}
+.qoute-texts .child-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.qoute-texts .child-2 {
+    width: 70%;
+}
+.qoute-texts .child-2 .head{
+    font-size: 18px;
+    margin-bottom: 20%;
+}
+.qoute .image-div {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: start;
+  height: 500px;
+}
+
+.qoute .image-div .image-1 {
+  width: 250px;
+  height: 350px;
+  filter: grayscale(100) brightness(0.9);
+}
+.qoute .image-div .image-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.qoute .image-div .image-2 {
+  width: 300px;
+  height: 400px;
+  filter: grayscale(100) brightness(0.9);
+}
+.qoute .image-div .image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.big-text{
+    font-size: 112px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.product{
+    max-width: 1350px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.product .child-1, .product .child-2{
+  width: 40%;
+ 
+}
+.product .child-1 h2{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.product .child-1 .bor{
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin-top: 20px;
+}
+.product .child-2 h2{
+  font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.product .child-1 p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.product .child-2 p{
+  font-size: 22px;
+  font-weight: 400;
+  color: #747973;
+  font-style: italic;
+}
+
+.prod{
+  max-width: 1350px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prod .arrow{
+  width: 200px;
+  height: 50px ;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+}
+.prod .arrow img{
+  width: 50px;
+}
+
+.prod .big{
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: grayscale(100) brightness(0.9);
+}
+.prod .small{
+  width: 200px;
+  height: 250px;
+  filter: grayscale(100) brightness(0.9);
+}
