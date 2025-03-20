@@ -1,0 +1,295 @@
+.desktop {
+    background-color: #f8ed8c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .desktop .div {
+    background-color: var(--d-2);
+    height: 5220px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .desktop .overlap {
+    background-color: var(--d-4);
+    height: 1070px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .desktop .frame {
+    background-color: var(--d-1);
+    border-radius: 0px 0px 250px 0px;
+    height: 224px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .desktop .navbar {
+    height: 36px;
+    left: 128px;
+    position: absolute;
+    top: 130px;
+    width: 1000px;
+  }
+  
+  .desktop .text-wrapper {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 153px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 206px;
+  }
+  
+  .desktop .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 613px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 154px;
+  }
+  
+  .desktop .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 409px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 154px;
+  }
+  
+  .desktop .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 817px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 173px;
+  }
+  
+  .desktop .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 103px;
+  }
+  
+  .desktop .group {
+    height: 106px;
+    left: 126px;
+    position: absolute;
+    top: -11px;
+    width: 669px;
+  }
+  
+  .desktop .overlap-group {
+    height: 106px;
+    position: relative;
+    width: 667px;
+  }
+  
+  .desktop .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-size: 96px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 667px;
+  }
+  
+  .desktop .vector {
+    height: 49px;
+    left: 553px;
+    position: absolute;
+    top: 42px;
+    width: 62px;
+  }
+  
+  .desktop .img {
+    height: 13px;
+    left: 553px;
+    position: absolute;
+    top: 91px;
+    width: 62px;
+  }
+  
+  .desktop .frame-2 {
+    background-color: var(--d-4);
+    height: 1070px;
+    left: 0;
+    position: absolute;
+    top: 1312px;
+    width: 1440px;
+  }
+  
+  .desktop .frame-3 {
+    background-color: var(--d-4);
+    height: 1070px;
+    left: 0;
+    position: absolute;
+    top: 2624px;
+    width: 1440px;
+  }
+  
+  .desktop .frame-4 {
+    background-color: var(--d-4);
+    height: 1070px;
+    left: 0;
+    position: absolute;
+    top: 3936px;
+    width: 1440px;
+  }
+  
+  .desktop .frame-5 {
+    background-color: var(--d-3);
+    height: 214px;
+    left: 0;
+    position: absolute;
+    top: 5006px;
+    width: 1440px;
+  }
+  
+  .desktop .text-wrapper-7 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 624px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+    width: 191px;
+  }
+  
+  .desktop .group-2 {
+    height: 43px;
+    left: 117px;
+    position: absolute;
+    top: 85px;
+    width: 1206px;
+  }
+  
+  .desktop .group-3 {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 475px;
+  }
+  
+  .desktop .vector-2 {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 49px;
+  }
+  
+  .desktop .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 49px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 424px;
+  }
+  
+  .desktop .group-4 {
+    height: 43px;
+    left: 504px;
+    position: absolute;
+    top: 0;
+    width: 325px;
+  }
+  
+  .desktop .vector-3 {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 49px;
+  }
+  
+  .desktop .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 56px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 267px;
+  }
+  
+  .desktop .group-5 {
+    height: 40px;
+    left: 907px;
+    position: absolute;
+    top: 3px;
+    width: 301px;
+  }
+  
+  .desktop .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "Merriweather-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 59px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    white-space: nowrap;
+    width: 240px;
+  }
