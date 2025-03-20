@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-color: #f5f5f5; */
+    margin: 0;
+    padding: 0;
+    background-image: url(pic/bg1.jpg);
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.sneaker-preview img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.color-options, .style-options {
+    margin-top: 20px;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color-btn[data-color="red"] { background: red; }
+.color-btn[data-color="blue"] { background: blue; }
+.color-btn[data-color="green"] { background: green; }
+
+.style-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.style-btn:hover {
+    background: #444;
+}
