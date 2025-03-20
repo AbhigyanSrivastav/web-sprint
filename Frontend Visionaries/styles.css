@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: #0d1b2a;
+  color: #e0e0e0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #1b263b;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  padding: 1rem;
+}
+
+.navbar-scrolled {
+  background-color: #162a3e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  transform: scale(1.05);
+  color: #e94560 !important;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0.75rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #e94560 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #e94560;
+  transition: width 0.3s, left 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link.active {
+  color: #e94560 !important;
+  font-weight: 600;
+}
+
+.btn-contact {
+  background-color: transparent;
+  color: #e94560;
+  font-weight: 600;
+  border: 2px solid #e94560;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background-color: #e94560;
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Hamburger Icon */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e94560' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
