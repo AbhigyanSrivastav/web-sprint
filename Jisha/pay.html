@@ -3,107 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <style>
-        /* Reset & Basic Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        /* Payment Container */
-        .payment-container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            width: 350px;
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 15px;
-        }
-
-        /* Form Inputs */
-        label {
-            display: block;
-            text-align: left;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        /* Buttons */
-        .btn {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .btn-primary {
-            background: #28a745;
-            color: white;
-        }
-        .btn-paypal {
-            background: #0070ba;
-            color: white;
-        }
-        .btn:hover {
-            opacity: 0.8;
-        }
-    </style>
+    <title>Payment Section</title>
 </head>
 <body>
 
     <div class="payment-container">
-        <h2>Credit Card Details</h2>
-        <form id="payment-form">
-            <label>Card Number</label>
-            <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        <h2>Choose Payment Method</h2>
 
-            <label>Expiry Date</label>
-            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'card')">💳 Card</button>
+            <button class="tablink" onclick="openTab(event, 'upi')">📱 UPI</button>
+            <button class="tablink" onclick="openTab(event, 'netbanking')">🏦 Net Banking</button>
+            <button class="tablink" onclick="openTab(event, 'wallet')">👛 Wallet</button>
+            <button class="tablink" onclick="openTab(event, 'paypal')">🌍 PayPal</button>
+        </div>
 
-            <label>CVV</label>
-            <input type="text" id="cvv" placeholder="123" required>
+        <div id="card" class="tabcontent active">
+            <h3>Credit/Debit Card</h3>
+            <input type="text" placeholder="Card Number" maxlength="16">
+            <input type="text" placeholder="MM/YY" maxlength="5">
+            <input type="text" placeholder="CVV" maxlength="3">
+            <input type="text" placeholder="Card Holder Name">
+            <button onclick="payWithCard()">Proceed</button>
+        </div>
 
-            <label>Card Holder Name</label>
-            <input type="text" id="card-holder" placeholder="Full Name" required>
+        <div id="upi" class="tabcontent">
+            <h3>Pay via UPI</h3>
+            <input type="text" placeholder="UPI ID (example@upi)">
+            <button onclick="payWithUPI()">Proceed</button>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Proceed</button>
-            <button type="button" class="btn btn-paypal" onclick="payWithPayPal()">Pay with PayPal</button>
-        </form>
+        <div id="netbanking" class="tabcontent">
+            <h3>Net Banking</h3>
+            <select>
+                <option>Select Bank</option>
+                <option>SBI</option>
+                <option>HDFC</option>
+                <option>ICICI</option>
+                <option>Axis Bank</option>
+            </select>
+            <button onclick="payWithNetBanking()">Proceed</button>
+        </div>
+
+        <div id="wallet" class="tabcontent">
+            <h3>Wallet Payment</h3>
+            <select>
+                <option>Select Wallet</option>
+                <option>Paytm</option>
+                <option>Amazon Pay</option>
+            </select>
+            <button onclick="payWithWallet()">Proceed</button>
+        </div>
+
+        <div id="paypal" class="tabcontent">
+            <h3>Pay with PayPal</h3>
+            <button onclick="payWithPayPal()">Proceed</button>
+        </div>
     </div>
 
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
-        // Simple validation and payment simulation
-        document.getElementById("payment-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Payment Processed Successfully!");
-        });
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+
+        function payWithCard() {
+            var options = {
+                "key": "RAZORPAY_KEY_ID", // Replace with your Razorpay Key
+                "amount": 50000, // Amount in paisa (500 INR)
+                "currency": "INR",
+                "name": "MaanPasandKhana",
+                "description": "Food Discovery Payment",
+                "image": "logo.png",
+                "handler": function (response) {
+                    alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+            var rzp = new Razorpay(options);
+            rzp.open();
+        }
+
+        function payWithUPI() {
+            alert("Redirecting to UPI payment...");
+        }
+
+        function payWithNetBanking() {
+            alert("Redirecting to Net Banking...");
+        }
+
+        function payWithWallet() {
+            alert("Redirecting to Wallet Payment...");
+        }
 
         function payWithPayPal() {
-            alert("Redirecting to PayPal...");
+            window.location.href = "https://www.paypal.com/";
         }
     </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: black;
+        }
+
+        .payment-container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background:rgb(215, 210, 210);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .tablink {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            background: grey;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: 0.3s;
+        }
+
+        .tablink.active, .tablink:hover {
+            background: #131313;
+            color: white;
+        }
+
+        .tabcontent {
+            display: none;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #020202;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            background:gray;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background:black;
+        }
+    </style>
 
 </body>
 </html>
