@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5;/ */
+    text-align: center;
+    /* background-image: url(pic/bg1.jpg); */
+}
+
+.featured-sneakers {
+    padding: 50px 20px;
+    background: white;
+    background-image: url(pic/sn1.jpg);
+    mix-blend-mode: multiply;
+    padding-bottom: 28vh;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 44px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0);
+}
+
+.sneaker-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sneaker-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+.sneaker-card:hover{
+    background: rgba(225, 225, 225, 0.5);
+    color: #0d0e0d;
+    transform: scale(1.1);
+}
+
+.sneaker-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sneaker-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.sneaker-card p {
+    font-size: 16px;
+    color: #0a0a0a;
+}
+
+.sneaker-card button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #3d4abe, #00bcd4);
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.sneaker-card button:hover {
+    background: #a59893;
+}
+
+.sneaker-card:hover {
+    transform: scale(1.05);
+}
