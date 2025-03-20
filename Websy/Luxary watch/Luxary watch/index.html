@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watch Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <header>
+        <div class="logo-container" data-aos="fade-down">
+            <img src="images/logo.png" height = "350" alt="Brand Logo" class="brand-logo">
+        </div>
+        <div class="hero" data-aos="fade-up">
+            <h1 class="text-effect">Timeless <span class="bold-text">Elegance</span></h2>
+            <p> <pre></pre><h2>Discover the finest luxury watches crafted with precision.</h2></p>
+            <button class="cta">Buy Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-showcase">
+            <div class="watch-container" id="threejs-canvas" data-aos="fade-right"></div>
+            <img src="images/luxury-watch-1.jpg" height = "400" alt="Luxury Watch" class="watch-image" data-aos="zoom-in">
+            <div class="details" data-aos="fade-left">
+                <h2>Elite Timekeeper</h2>
+                <p class="description">Experience the blend of sophistication and accuracy with this exquisite timepiece. <br>
+                <strong>Features:</strong><br>
+                ⌚ Swiss-made automatic movement<br>
+                🌊 Water-resistant up to 50 meters<br>
+                💎 Sapphire crystal glass<br>
+                🟡 Gold-plated bezel</p>
+                <label>Engraving: <input type="text" id="engraving" placeholder="Add your name"></label>
+                <label>Strap Type:
+                    <select id="strap">
+                        <option value="leather">Leather</option>
+                        <option value="metal">Metal</option>
+                    </select>
+                </label>
+                <p>Price: $<span id="price">50000</span></p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luxury Watch Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
