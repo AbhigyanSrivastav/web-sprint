@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .light {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .dark {
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f8f8f8;
+  }
+  
+  .dark header {
+    background: #222;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stock {
+    color: red;
+  }
+  
+  .countdown {
+    font-weight: bold;
+  }
+  
+  .buy-now {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+  }  
