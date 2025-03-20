@@ -1,0 +1,49 @@
+
+<head>
+    <title><b>Storytelling section</gitb></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Storytelling sprint</h1>
+        <ul id="Storylist">
+            <li><a herf="#" onclick="showstory"('story 1',once upon a time...')"></a></li>
+            <li><a herf="#" onclick="showstory('story 2','A long journey aheadf...')">Story 2</a></li>
+
+        </ul>
+        <h2 id="StoryTitle"></h2>"
+        <p id="StoryContent"></p>
+    </div>
+    <script src="script.js"></script>
+
+
+body{
+    font-family:Arial,sans-serif;
+    text-align: centre;
+    background: color #f4f4f4;
+}
+.container{
+    margin: 50px auto;
+    width: 80%;
+    background: white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+ul li {
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    font-weight:bold;
+}
+//js
+ 
+function showstory(tile,conent){
+    document.getElementById("storytilte").innerText=title;
+    document.getElementById("storyConent").innerText=content;
+}
