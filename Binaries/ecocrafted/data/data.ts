@@ -21,26 +21,19 @@ export const Hero = {
 
 export const Crafts = [
   {
-    name: "Pottery & Ceramics",
-    description:
-      "Handcrafted pottery and ceramics made by artisans with traditional techniques and modern designs.",
-    image: "https://cdn.ecocrafted.com/assets/images/crafts/pottery.jpg",
-    link: "/products/pottery",
-  },
-  {
     name: "Handmade Jewelry",
     description:
-      "Unique handmade jewelry crafted with love and care by skilled artisans.",
-    image: "https://cdn.ecocrafted.com/assets/images/crafts/jewelry.jpg",
-    link: "/products/jewelry",
+      "Discover unique handmade jewelry crafted by artisans from around the world.",
+    image:
+      "https://img.freepik.com/free-photo/professional-artisan-job-workshop_23-2148801664.jpg?t=st=1742455763~exp=1742459363~hmac=cfe1a969bea0ddd0c820082d52d6da13c779990cbbe8841c088a798e1d101810&w=740",
+    id: "1",
+    badge: ["100% Handmade", "Fair Trade"],
+    artist: "Ximena",
+    artistImage: "https://randomuser.me/api/portraits/women/78.jpg",
+    story:
+      "Ximena is a jewelry artisan from Mexico. She has been crafting handmade jewelry for over 10 years. She uses traditional techniques to create unique and beautiful pieces that reflect her culture and heritage. Ximena is passionate about her craft and takes great pride in her work.",
   },
 ]
-
-// export const About = {
-//   bio: "Artist (National) • Self-Taught Software, App & Web Dev (Android, Win, Web & X-plat) • Full-Stack Dev • UI/UX Enthusiast • Graphics & Responsive Design Expert • Freelancer",
-//   description:
-//     "An artist, designer and developer from India, with over half a decade of experience creating responsive software, applications, web apps and cross-platform solutions. As an artist, my deep understanding of colors, visuals and artistic vision drives me to craft minimal, intuitive and highly responsive UI/UX, designs and graphics.",
-// }
 
 export const Social = [
   {
