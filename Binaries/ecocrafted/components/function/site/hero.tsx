@@ -31,7 +31,7 @@ function Content() {
       </Badge>
       <h1 className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         Experience artistry of handcrafted creations — <br />
-        <span className="text-amber-950">
+        <span className="text-amber-700">
           <TypingText
             words={HeroData.keywords.map((word) => `${word}.`)}
             loop={true}

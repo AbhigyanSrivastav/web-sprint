@@ -48,7 +48,7 @@ function Header() {
           className="px-1 text-base decoration-dashed"
           asChild
         >
-          <Link href="/about">Team Binaries</Link>
+          <Link href="/about">Pratham Raj Singh</Link>
         </Button>
         <AmphoraIcon
           size={22}

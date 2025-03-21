@@ -64,6 +64,21 @@ export const SiteMeta: SiteMeta[] = [
     icon: PhoneIcon,
   },
   {
+    title: "About",
+    description: "Learn more about the platform and its creators.",
+    href: "/about",
+    category: ["Site"],
+    pos: 3,
+    icon: UserIcon,
+  },
+  {
+    title: "FAQ",
+    description: "Frequently asked questions and answers.",
+    href: "/faq",
+    category: ["Support"],
+    icon: FileClockIcon,
+  },
+  {
     title: "Privacy Policy",
     description: "Read the privacy policy and data protection guidelines.",
     href: "/privacy-policy",
